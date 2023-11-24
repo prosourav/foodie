@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #fff;
+  background-color: rgb(42, 42, 42);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 18px;
 }
@@ -11,7 +11,7 @@
   padding: 0 20px;
 }
 
-.navbar-logo {
+.navbar-logo {  
   display: flex;
   align-items: center;
 }
@@ -29,7 +29,7 @@
 
 .navbar-link {
   text-decoration: none;
-  color: #333;
+  color: #fcfbfb;
   font-size: 16px;
   margin-right: 50px;
 }
@@ -57,3 +57,73 @@
   }
 }
 
+footer img{
+    height: 60px;
+}
+
+footer{
+    margin-top: 5%;
+    background-color: rgb(42, 42, 42);
+    color: #826e6e;
+    height: 400px;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-start;
+  height: 200px;
+  padding-top: 6%;
+}
+.title{
+  width: 20%;
+  padding-left: 100px;
+}
+.col-inner{
+  display: flex;
+  flex-direction: column;
+}
+.anc{
+  text-decoration: none;
+  color: white;
+  padding: 10px 2px;
+}
+@media (max-width: 760px){
+    .footer{
+        width: 110%;
+    }
+ }
+ 
+@media (max-width: 760px){
+    .sec-two{
+        flex-wrap: wrap;
+    }
+    .about-text{
+        max-width: 90%;
+    }
+}
+.aboutCard img{
+ width:350px;
+}
+.aboutCard{
+    margin: 0 10px;
+}
+.content{
+    padding-left: 40px;
+    margin-top: 10px;
+}
+.card-link{
+    color: rgb(75, 157, 220);
+    font-weight: 500;
+    cursor: pointer;
+}
+.icon{
+    color: chartreuse;
+    color: rgb(73, 173, 255);
+
+}
+.banner{
+    background-image: url('/public/Images/bannerbackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
