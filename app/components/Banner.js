@@ -13,7 +13,7 @@ const Banner = () => {
       <div style={{ backgroundImage: `url(${backgroundImage.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '600px', display: 'flex', justifyContent: 'space-evenly', height: '80vh', alignItems: 'center' }}>
         <div>
           <div style={{ height: '500px', width: '500px', }}>
-            <Image src={ImageBr} alt='' height={550} width={550} style={{ borderRadius: '60%' }} />
+            <Image src={'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800'} alt='' height={550} width={550} style={{ borderRadius: '60%' }} />
           </div>
         </div>
         <div style={{ width: '460px' }}>
