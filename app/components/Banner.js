@@ -9,8 +9,7 @@ const Banner = () => {
   const [open, setIsOpen] = useState(false);
   return (
     <>
-      <ContactModal {...{ open, setIsOpen }} />
-      <div style={{ backgroundImage: `url(${backgroundImage.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '600px', display: 'flex', justifyContent: 'space-evenly', height: '80vh', alignItems: 'center' }}>
+      <div id='Home' style={{ backgroundImage: `url(${backgroundImage.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '600px', display: 'flex', justifyContent: 'space-evenly', height: '80vh', alignItems: 'center' }}>
         <div>
           <div style={{ height: '500px', width: '500px', }}>
             <Image src={'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800'} alt='' height={550} width={550} style={{ borderRadius: '60%' }} />
@@ -22,6 +21,8 @@ const Banner = () => {
           <button style={{ background: 'rgb(0, 133, 255)', cursor: 'pointer', color: 'white', padding: '10px 20px', borderRadius: '6px', border: 'none' }} onClick={() => setIsOpen(true)}>Know More</button>
         </div>
       </div>
+      <ContactModal {...{ open, setIsOpen }} />
+
     </>
   );
 };

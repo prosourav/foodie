@@ -8,7 +8,7 @@ import emailjs from "emailjs-com";
 
 const customStyles = {
   content: {
-    top: '50%',
+    top: '55%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -67,7 +67,7 @@ export default function ContactModal({ open, setIsOpen }) {
       style={customStyles}
       contentLabel="Example Modal"
     >
-       <Formik
+      <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
@@ -144,7 +144,7 @@ export default function ContactModal({ open, setIsOpen }) {
           </Form>
         )}
       </Formik>
-       
+
 
       {/* <Formik
         initialValues={initialValues}

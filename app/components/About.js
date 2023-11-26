@@ -6,6 +6,7 @@ import Chef from '/public/Images/Image/chef-cook-food.png';
 import HomeDel from '/public/Images/Image/home-delivery.png';
 import FastDel from '/public/Images/Image/fast-delivery.png';
 import Image from 'next/image';
+import { Slide } from 'react-reveal';
 
 const About = () => {
   const [about, setAbout] = useState([
@@ -16,6 +17,7 @@ const About = () => {
 
   return (
     <div style={{ padding: '10px 40px' }} id='About'>
+      <Slide left>
       <div style={{padding: '1px 70px'}}>
         <h1>Why To Choose Us</h1>
         <p className='about-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, culpa recusandae consectetur exercitationem autem perspiciatis amet unde accusamus possimus vitae rerum laborum  sit amet consectetur adipisicing elit. Doloribus,  nostrum
@@ -27,6 +29,8 @@ const About = () => {
           about.map(about => <AboutCard key={about._id} about={about}></AboutCard>)
         }
       </div>
+        </Slide>
+
     </div>
   );
 };
