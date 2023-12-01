@@ -5,8 +5,8 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import Dropdown from './Dropdown';
 
 const options = [
-  { item: "Bengali", menu: "https://drive.google.com/file/d/1DVqcxBx93OKLAnFMR3Nt8LjFDmQApnpD/view?usp=sharing" },
-  { item: "North Indian", menu: "https://drive.google.com/file/d/1bN-ZSVaYo9CNTboqWmz2Fdj0abEWhfWG/view?usp=sharing" }
+  { item: "Bengali", menu: "https://drive.google.com/file/d/1DVqcxBx93OKLAnFMR3Nt8LjFDmQApnpD/view" },
+  { item: "North Indian", menu: "https://drive.google.com/file/d/1bN-ZSVaYo9CNTboqWmz2Fdj0abEWhfWG/view" }
 ];
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link href="/" className="navbar-logo">
-          <h3 style={{ color: 'white' }}>Logo Moho The Caterer</h3>
+          <h3 style={{ color: 'white' }}>Spicecraft Catering</h3>
         </Link>
         <ul className="navbar-links ml-auto">
           {
