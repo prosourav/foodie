@@ -145,6 +145,10 @@ footer{
   height: 40px;
   margin-top: 2px;
   line-height: 40px;
+  text-decoration: none;
+  color: black;
+  padding-left: 12px;
+  display: block;
 }
 
 .menu:hover {

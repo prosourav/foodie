@@ -13,6 +13,7 @@ function Dropdown({ name, options, onSelect }) {
   function handleSelect(option) {
     onSelect(option); // call the callback function
     setOpen(false); // close the dropdown
+    
   }
 
   return (
@@ -46,13 +47,15 @@ function Dropdown({ name, options, onSelect }) {
         {/* the list of options */}
         <ul style={{ listStyle: "none", margin: "0", padding: "0"}}>
           {options.map((option) => (
-            <li
-              key={option}
+            <a
+              key={option.item}
               className="menu"
-              onClick={() => handleSelect(option)}
+              target="_blank"
+              rel="noreferrer"
+              href={option.menu}
             >
-              {option}
-            </li>
+              {option.item}
+            </a>
           ))}
         </ul>
       </div>

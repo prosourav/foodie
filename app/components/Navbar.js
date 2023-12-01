@@ -4,13 +4,16 @@ import { FaBars } from 'react-icons/fa';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Dropdown from './Dropdown';
 
-const options = ["Bengali", "North Indian"];
+const options = [
+  { item: "Bengali", menu: "https://drive.google.com/file/d/1DVqcxBx93OKLAnFMR3Nt8LjFDmQApnpD/view?usp=sharing" },
+  { item: "North Indian", menu: "https://drive.google.com/file/d/1bN-ZSVaYo9CNTboqWmz2Fdj0abEWhfWG/view?usp=sharing" }
+];
 
 const Navbar = () => {
   const menuItem = ['Home', 'About', 'Service', 'Contact'];
 
   function handleSelect(option) {
-   console.log(option);
+    console.log(option);
   };
 
   return (
