@@ -10,7 +10,7 @@ const options = [
 ];
 
 const Navbar = () => {
-  const menuItem = ['Home', 'About', 'Service', 'Contact'];
+  const menuItem = ['Home', 'Service', 'About', 'Contact'];
 
   function handleSelect(option) {
     console.log(option);

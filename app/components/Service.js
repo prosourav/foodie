@@ -44,10 +44,10 @@ const functions = {
 const Service = () => {
 
   return (
-    <div id='Service' style={{ display: "flex", alignItems: "center", flexDirection: "column", background: "#FFFCF8", justifyContent: "space-around", margin: "30px auto" }}>
+    <div id='Service' style={{ display: "flex", alignItems: "center", flexDirection: "column", background: "#FFFCF8", justifyContent: "space-around", padding: "30px auto" }}>
       <Slide right>
         <div>
-          <h1 style={{ margin: "10px auto" }}>Services</h1>
+          <h1 style={{ margin: "50px auto" }}>Services</h1>
         </div>
 
         <div style={{ width: "100%", margin: "50px auto" }}>
