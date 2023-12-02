@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="title">
           {/* <img src={WhiteLogo} alt="Hot Onion White Logo" /> */}
           <h3 style={{ color: 'whitesmoke', color: 'red' }}>
-            Moho The Caterer
+            Spicecraft Catering
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div>
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <div style={{ marginTop: '12px' }}>
               <FontAwesomeIcon icon={faEnvelope} color='wheat' />
-              <span style={{ color: 'wheat', paddingLeft: '6px' }}>mohothecatrer@gmail.com</span>
+              <span style={{ color: 'wheat', paddingLeft: '6px' }}>contact@spicecraftcatering.com.au</span>
             </div>
             {/* <button style={{ background: 'rgb(0, 133, 255)', cursor: 'pointer', color: 'white', padding: '10px 20px', borderRadius: '6px', border: 'none' }} onClick={() => setIsOpen(true)}>Know More</button> */}
 
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '6%', paddingTop: '50px' }}>
-        <small style={{ textAlign: 'center', color: 'gray' }}>Copyright &copy;  {new Date().getFullYear()} Moho The Caterer </small>
+        <small style={{ textAlign: 'center', color: 'gray' }}>Copyright &copy;  {new Date().getFullYear()} Spicecraft Catering </small>
       </div>
 
     </footer>
