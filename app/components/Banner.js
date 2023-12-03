@@ -9,11 +9,17 @@ const Banner = () => {
   const [open, setIsOpen] = useState(false);
   return (
     <>
-      <div id='Home' style={{ backgroundImage: `url(${'https://lerablog.org/wp-content/uploads/2020/03/Types-of-catering-862x485.jpg'})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', justifyContent: 'flex-start', paddingLeft:'50px',height: '90vh', alignItems: 'center' }}>
-      
-        <div style={{ width: '460px' }}>
-          <h1 style={{ color: '#ae2727' }}><span >Welcome </span>to the world of tasty food</h1>
-          <h4 style={{color:'white'}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.dolor sit, amet consectetur adipisicing elit.dolor sit, amet consectetur adipisicing elit.dolor sit, amet consectetur adipisicing elit. Repellendus voluptatum voluptate vitae cum. Delectus distinctio maxime cumque est nihil ullam veniam possimus!</h4>
+      <div id='Home' style={{ backgroundImage: `url(${'https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', justifyContent: "center", height: '90vh', alignItems: 'center' }}>
+        <div>
+          {/* <div style={{ height: '500px', width: '500px', }}>
+            <Image src={'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800'} alt='' height={550} width={550} style={{ borderRadius: '60%' }} /> 
+          </div> */}
+        </div>
+        <div style={{ width: '660px' }}>
+          <h1 style={{ color: '#fff', padding: '0px', margin: '0px', }}>Welcome to the <span style={{ color: '#fff', fontStyle:'italic' }}>SpiceCraft Catering</span></h1>
+          <p style={{ color: 'rgb(215 214 211)', fontFamily:'sans-serif', fontStyle:'oblique' }}>
+            Whether it’s a wedding, birthday, or corporate event, we have the perfect catering solution for you. Call us now and get a free quote.
+            </p>
           <button style={{ background: 'rgb(0, 133, 255)', cursor: 'pointer', color: 'white', padding: '10px 20px', borderRadius: '6px', border: 'none' }} onClick={() => setIsOpen(true)}>Know More</button>
         </div>
       </div>
