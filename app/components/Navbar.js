@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link href="/" className="navbar-logo">
-          <h3 style={{ color: 'white' }}>Spicecraft Catering</h3>
+          <h3 style={{ color: 'white', marginLeft:'60px'}}>Spicecraft Catering</h3>
         </Link>
         <ul className="navbar-links ml-auto">
           {

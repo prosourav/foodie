@@ -10,26 +10,28 @@ import { Slide } from 'react-reveal';
 
 const About = () => {
   const [about, setAbout] = useState([
-    { _id: 1, heading: 'A good auto responder', img: Chef, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, accusantium? Accusantium, corrupti consequuntur repellat iure quia corporis aspernatur ut veniam nostrum quisquam!' },
-    { _id: 2, heading: 'Home delivery', img: HomeDel, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, accusantium? Accusantium, corrupti consequuntur repellat iure quia corporis aspernatur ut veniam nostrum quisquam!' },
-    { _id: 3, heading: 'Quick delivery', img: FastDel, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, accusantium? Accusantium, corrupti consequuntur repellat iure quia corporis aspernatur ut veniam nostrum quisquam!' }
+    { _id: 1, heading: 'A good auto responder', img: Chef, description: 'Thank you for contacting Catering Solutions. We are a catering service that can make your party a success. We offer a variety of menus and services to suit your needs. We will get back to you as soon as possible. Catering Solutions: the best choice for your party.' },
+    { _id: 2, heading: 'Home delivery', img: HomeDel, description: 'We offer a variety of catering options for any occasion, and we can also deliver your delicious feast right to your doorstep. Our friendly and efficient staff will bring the culinary experience straight to you, so you can enjoy your special event' },
+    { _id: 3, heading: 'Quick delivery', img: FastDel, description: 'Enjoy delectable dishes without compromising on time. We offer a variety of catering options, delivered promptly to your doorstep. Our efficient team ensures your culinary experience arrives fresh and on time.' }
   ]);
 
   return (
     <div style={{ padding: '10px 40px' }} id='About'>
       <Slide left>
-      <div style={{padding: '1px 70px'}}>
-        <h1>Why To Choose Us</h1>
-        <p className='about-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, culpa recusandae consectetur exercitationem autem perspiciatis amet unde accusamus possimus vitae rerum laborum  sit amet consectetur adipisicing elit. Doloribus,  nostrum
-          ipsum!
-        </p>
-      </div>
-      <div style={{ display: 'flex', justifyContent:'center'}}>
-        {
-          about.map(about => <AboutCard key={about._id} about={about}></AboutCard>)
-        }
-      </div>
-        </Slide>
+        <div style={{ padding: '1px 25px 13px 60px' }}>
+          <h1>Why To Choose Us</h1>
+          <p className='about-text'>
+            When it comes to your special occasion, choose a catering service that goes beyond ordinary. Our team of passionate culinary experts is dedicated to creating unforgettable experiences that will tantalize your taste buds and leave a lasting impression on your guests. We use only the freshest ingredients and time-honored techniques to craft exquisite dishes that are not only delicious but also visually stunning.
+
+            With our extensive experience and unwavering commitment to quality, we ensure that your event is seamlessly catered from start to finish.
+          </p>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          {
+            about.map(about => <AboutCard key={about._id} about={about}></AboutCard>)
+          }
+        </div>
+      </Slide>
 
     </div>
   );
