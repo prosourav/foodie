@@ -22,7 +22,7 @@ export default function ContactModal({ open, setIsOpen }) {
   const validationSchema = yup.object({
     name: yup.string().required('Name is required'),
     email: yup.string().required('Name is required').email('Invalid email address'),
-    phoneNumber: yup.string().required('Phone number is required').matches(/^\d{10}$/, 'Invalid phone number'),
+    phoneNumber: yup.string().required('Phone number is required'),
     query: yup.string().required('Query is required'),
   });
 
@@ -35,7 +35,7 @@ export default function ContactModal({ open, setIsOpen }) {
   const handleSubmit = (values, { resetForm }) => {
     // console.log('event: ', values);
     const payload = {
-      to_name: 'Sourav',
+      to_name: 'Swarup',
       user_name: values.name,
       user_email: values.email,
       message: values.query,
@@ -43,10 +43,10 @@ export default function ContactModal({ open, setIsOpen }) {
     };
     emailjs
       .send(
-        "service_0sk62tp",
-        "template_5zdz1qc",
+        "service_qqh1pww",
+        "template_24zmrv4",
         payload,
-        "user_caagFYsbH7sk7neERYGJ1"
+        "bBVvO7WaMi1MvQCM1"
       )
       .then(
         (result) => {
