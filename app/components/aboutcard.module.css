@@ -1,0 +1,31 @@
+.aboutCard img{
+ width:350px;
+}
+.aboutCard{
+    margin: 0 10px;
+}
+
+.main{
+    display: flex;
+     flex-direction: column;
+      align-items: center;
+       justify-content: space-between;
+        width: 350px;
+         padding: 2px 20px;
+          flex-wrap: wrap;
+}
+
+.img{
+    margin-top: 30px;
+}
+
+@media (max-width: 760px){
+.img{
+  /* height: ; */
+  width: 100%;
+} 
+.aboutCard{
+    margin: 0 2px;
+}
+
+}

@@ -3,10 +3,11 @@ import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-s
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import styles from './aboutcard.module.css';
 
 const AboutCard = (props) => {
   const [descriptionCollapse, setDescriptionCollapse] = useState(false);
-  
+
   const { img, heading, description, icon } = props.about;
 
   const showMore = () => {
@@ -17,10 +18,12 @@ const AboutCard = (props) => {
   }
   return (
 
-    <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'space-between', width:'350px', padding:'2px 20px', flexWrap:'wrap'}}>
-      <Image src={img} alt="" height={300} width={350} style={{marginTop:'30px'}}/>
+    <div className={styles['main']}>
+      <Image src={img} alt="" height={300} width={350} className={styles['img']} />
       <div>
-        <h4><span><img src={icon} alt=""  /></span>{heading}</h4>
+        <h4>
+          <span><img src={icon} alt="" /></span>{heading}
+        </h4>
         <p>
           {
             descriptionCollapse ? description : description?.substr(0, 100)

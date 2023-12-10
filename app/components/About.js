@@ -6,6 +6,7 @@ import Chef from '/public/Images/Image/chef-cook-food.png';
 import HomeDel from '/public/Images/Image/home-delivery.png';
 import FastDel from '/public/Images/Image/fast-delivery.png';
 import Image from 'next/image';
+import styles from "./about.module.css"
 import { Slide } from 'react-reveal';
 
 const About = () => {
@@ -16,23 +17,24 @@ const About = () => {
   ]);
 
   return (
-    <div style={{ padding: '10px 40px' }} id='About'>
+    <div className={styles['parent']} id='About'>
       <Slide left>
-        <div style={{ padding: '1px 25px 13px 60px' }}>
-          <h1>Why To Choose Us</h1>
+      <div className={styles['wrapper']}>
+        <div className={styles['small-d']}>
+          <h1 className='red-col'>Why To Choose Us</h1>
           <p className='about-text'>
             When it comes to your special occasion, choose a catering service that goes beyond ordinary. Our team of passionate culinary experts is dedicated to creating unforgettable experiences that will tantalize your taste buds and leave a lasting impression on your guests. We use only the freshest ingredients and time-honored techniques to craft exquisite dishes that are not only delicious but also visually stunning.
 
             With our extensive experience and unwavering commitment to quality, we ensure that your event is seamlessly catered from start to finish.
           </p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div className={styles['card-wrapper']}>
           {
             about.map(about => <AboutCard key={about._id} about={about}></AboutCard>)
           }
         </div>
+      </div>
       </Slide>
-
     </div>
   );
 };

@@ -6,6 +6,7 @@
   top: 0;
   z-index: 8;
   opacity: 3;
+  overflow: hidden;
 }
 
 .navbar-container {
@@ -27,8 +28,7 @@
 .navbar-links {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-left: auto;
 }
 
 .navbar-link {
@@ -38,54 +38,30 @@
   margin-right: 50px;
 }
 
-.navbar-toggle {
-  display: none;
-  cursor: pointer;
-}
 
 @media (max-width: 768px) {
-  .navbar-toggle {
-    display: block;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-  }
-
-  .navbar-links {
-    display: none;
-  }
-
-  .navbar-links.active {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-footer img{
-    height: 60px;
-}
-
-footer{
-    margin-top: 5%;
-    background-color: rgb(42, 42, 42);
-    color: #826e6e;
-    height: 400px;
-}
-.container{
-  display: flex;
-  justify-content: space-around;
-  align-items:flex-start;
-  height: 200px;
-  padding-top: 6%;
-}
-.title{
-  width: 22%;
-  padding-left: 100px;
-}
-.col-inner{
+ 
+.navbar-container {
   display: flex;
   flex-direction: column;
 }
+.dropdown{
+  margin-top: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fcfbfb;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin-left: 0px;
+}
+}
+
 .anc{
   text-decoration: none;
   color: white;
@@ -105,12 +81,7 @@ footer{
         max-width: 90%;
     }
 }
-.aboutCard img{
- width:350px;
-}
-.aboutCard{
-    margin: 0 10px;
-}
+
 .content{
     padding-left: 40px;
     margin-top: 10px;
@@ -149,8 +120,14 @@ footer{
   color: black;
   padding-left: 12px;
   display: block;
-}
+};
 
 .menu:hover {
   background-color: rgb(240, 245, 246);
-}
+};
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+};
+

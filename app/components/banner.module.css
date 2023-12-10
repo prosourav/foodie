@@ -1,0 +1,14 @@
+.para{
+ color: rgb(215 214 211);
+  font-family: sans-serif;
+   font-style: oblique;
+}
+.main{
+ background-image: url('https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+   background-repeat: no-repeat;
+  display: flex;
+   justify-content: center;
+   height: 90vh;
+   align-items: center ;
+}

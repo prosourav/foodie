@@ -13,7 +13,7 @@ function Dropdown({ name, options, onSelect }) {
   function handleSelect(option) {
     onSelect(option); // call the callback function
     setOpen(false); // close the dropdown
-    
+
   }
 
   return (
@@ -38,14 +38,14 @@ function Dropdown({ name, options, onSelect }) {
           display: open ? "block" : "none",
           backgroundColor: "white",
           margin: "10px 12px",
-          position: "absolute",
+          position: "fixed",
           borderRadius: "2px",
           marginTop: "5px",
           background: '#FFF',
         }}
       >
         {/* the list of options */}
-        <ul style={{ listStyle: "none", margin: "0", padding: "0"}}>
+        <ul style={{ listStyle: "none", margin: "0", padding: "0" }}>
           {options.map((option) => (
             <a
               key={option.item}

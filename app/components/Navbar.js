@@ -19,10 +19,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link href="/" className="navbar-logo">
-          <h3 style={{ color: 'white', marginLeft:'60px'}}>Spicecraft Catering</h3>
+        <Link to="Home" className="navbar-logo">
+          <h3 style={{ color: 'white' }}>Spicecraft Catering</h3>
         </Link>
-        <ul className="navbar-links ml-auto">
+        <ul className="navbar-links">
           {
             menuItem.map(function (item) {
               return <li key={item}><Link href="/" to={item} smooth={true} duration={500} className="navbar-link">{item}</Link></li>
@@ -30,11 +30,6 @@ const Navbar = () => {
           }
         </ul>
         <Dropdown options={options} onSelect={handleSelect} name={"Get Menus"} />
-        <button className="navbar-toggle" onClick={() => {
-          document.querySelector('.navbar-links').classList.toggle('active');
-        }}>
-          <FaBars />
-        </button>
       </div>
     </nav>
   );
