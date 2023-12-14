@@ -35,7 +35,7 @@ const Footer = () => {
 
             <div className={styles["contact"]} onClick={() => setIsOpen(true)}>
               <FontAwesomeIcon icon={faShareFromSquare} color='wheat' />
-              <span style={{ color: 'wheat', paddingLeft: '6px', cursor:'pointer' }}>Fell free to do  any query</span>
+              <span style={{ color: 'wheat', paddingLeft: '6px', cursor:'pointer' }}>Feel free to do  any query</span>
             </div>
 
             <div className={styles["contact"]}>

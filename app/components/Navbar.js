@@ -5,8 +5,8 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import Dropdown from './Dropdown';
 
 const options = [
-  { item: "Bengali", menu: "https://drive.google.com/file/d/1DVqcxBx93OKLAnFMR3Nt8LjFDmQApnpD/view" },
-  { item: "North Indian", menu: "https://drive.google.com/file/d/1bN-ZSVaYo9CNTboqWmz2Fdj0abEWhfWG/view" }
+  { item: "Bengali", menu: "https://drive.google.com/file/d/1R3pW7fVBsmfZowo0vUiUcYNbjHpDuBa1/view?usp=sharing" },
+  { item: "North Indian", menu: "https://drive.google.com/file/d/1DDLPUoH6Hqem0nhEr6DBG-aZu-Hlq_kg/view?usp=sharing" }
 ];
 
 const Navbar = () => {
