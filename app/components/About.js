@@ -13,7 +13,7 @@ const About = () => {
   const [about, setAbout] = useState([
     { _id: 1, heading: 'A good auto responder', img: Chef, description: 'Thank you for contacting Catering Solutions. We are a catering service that can make your party a success. We offer a variety of menus and services to suit your needs. We will get back to you as soon as possible. Catering Solutions: the best choice for your party.' },
     { _id: 2, heading: 'Home delivery', img: HomeDel, description: 'We offer a variety of catering options for any occasion, and we can also deliver your delicious feast right to your doorstep. Our friendly and efficient staff will bring the culinary experience straight to you, so you can enjoy your special event' },
-    { _id: 3, heading: 'Quick delivery', img: FastDel, description: 'Enjoy delectable dishes without compromising on time. We offer a variety of catering options, delivered promptly to your doorstep. Our efficient team ensures your culinary experience arrives fresh and on time.' }
+    { _id: 3, heading: 'Quick delivery', img: 'https://millionmilesecrets.com/wp-content/uploads/Food-delivery-11.jpg', description: 'Enjoy delectable dishes without compromising on time. We offer a variety of catering options, delivered promptly to your doorstep. Our efficient team ensures your culinary experience arrives fresh and on time.' }
   ]);
 
   return (
