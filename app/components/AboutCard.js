@@ -5,6 +5,11 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import styles from './aboutcard.module.css';
 
+export const metadata = {
+  title: 'Events we cover in Sydney Australia',
+  description: 'We provide food services accross sydney for catering service in Wedding, Corporate Party, Family party, Birthday party etc '
+}
+
 const AboutCard = (props) => {
   const [descriptionCollapse, setDescriptionCollapse] = useState(false);
 

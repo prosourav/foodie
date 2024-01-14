@@ -9,6 +9,12 @@ import Image from 'next/image';
 import styles from "./about.module.css"
 import { Slide } from 'react-reveal';
 
+export const metadata = {
+  title: 'Spicecraft Catering service',
+  description: 'Indian Caterer Service Provider in Sydney Australia, Offer varity indian dishes',
+}
+
+
 const About = () => {
   const [about, setAbout] = useState([
     { _id: 1, heading: 'A good auto responder', img: Chef, description: 'Thank you for contacting Catering Solutions. We are a catering service that can make your party a success. We offer a variety of menus and services to suit your needs. We will get back to you as soon as possible. Catering Solutions: the best choice for your party.' },

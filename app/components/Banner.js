@@ -7,6 +7,11 @@ import ContactModal from './Modal';
 import styles from './banner.module.css'
 import { Slide } from 'react-reveal';
 
+export const metadata = {
+  title: 'Catering',
+  description: ' Authentic Indian cuisine, South Indian food, Bengaali food',
+}
+
 const Banner = () => {
   const [open, setIsOpen] = useState(false);
   return (
